@@ -7,7 +7,7 @@
 -   [The Boat](https://www.sbs.com.au/theboat/)
 
 <br>
-<img src="https://i.redd.it/ym8b0522lbh81.jpg" alt="Funny meme about programmers" style="width:600px;display:block; margin:0 auto;"/>
+<img src="https://i.redd.it/ym8b0522lbh81.jpg" alt="Funny meme about programmers" style="width:600px;display:block;margin:0 auto;"/>
 <br>
 
 ## Programación del curso:
