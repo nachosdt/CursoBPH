@@ -5,6 +5,7 @@
 -   [Google](https://google.com)
 -   [W3Schools](https://www.w3schools.com/html/default.asp)
 -   [The Boat](https://www.sbs.com.au/theboat/)
+-   [CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
 
 <br>
 <img src="https://i.redd.it/ym8b0522lbh81.jpg" alt="Funny meme about programmers" style="width:600px;display:block;margin:0 auto;"/>

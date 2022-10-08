@@ -5,6 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Primer día de clase</title>
+        <style>
+            body {
+                background-color: #f0f0f0;
+            }
+            h1 {
+                color: #ff0000;
+            }
+            p {
+                color: #0000ff;
+            }
+        </style>
+        <link rel="stylesheet" href="estilos.css" />
     </head>
     <!--Esto es un comentario en HTML, no aparece visualmente en el navegador-->
     <body>
@@ -16,6 +28,8 @@
         <h5>Cabecera h5</h5>
         <h6>Cabecera h6</h6>
 
+        <h1>Va a verse en rojo</h1>
+
         <!--Paragraphs o párrafos-->
         <p>
             Este es un párrafo Este es un párrafo Este es un párrafo Este es un
@@ -23,10 +37,11 @@
             Este es un párrafo Este es un párrafo Este es un párrafo Este es un
             párrafo Este es un párrafo
         </p>
+        <p>Segundo elemento p</p>
         <!--Line breaks o saltos de línea-->
         <br />
         <!--Unordered list o Lista no ordenada-->
-        <ul>
+        <ul style="background-color: lightblue">
             <!--List item o elemento de la lista-->
             <li>Elemento no ordenado 1</li>
             <li>Elemento no ordenado 2</li>
@@ -35,7 +50,7 @@
             <li>Elemento no ordenado 5</li>
         </ul>
         <!--Ordered list o Lista ordenada-->
-        <ol>
+        <ol style="font-weight: bold; color: blue">
             <li>Elemento ordenado 1</li>
             <li>Elemento ordenado 2</li>
             <li>Elemento ordenado 3</li>
@@ -45,6 +60,10 @@
         <!--Anchor o enlace-->
         <a href="https://www.google.com">Google</a>
         <!--Imagen-->
-        <img src="https://i.redd.it/ym8b0522lbh81.jpg" alt="Google" />
+        <img
+            src="https://i.redd.it/ym8b0522lbh81.jpg"
+            alt="Meme sobre programadores"
+            style="width: 300px"
+        />
     </body>
 </html>
