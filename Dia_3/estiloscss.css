@@ -1,0 +1,65 @@
+html,
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+#titulo {
+    color: pink;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    cursor: default;
+}
+
+#listaDeEnlaces {
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+.enlace {
+    color: blue;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: red;
+    font-weight: bold;
+}
+
+section {
+    padding: 0 50px 30px 50px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.foto {
+    width: 60%;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+#contenedor {
+    border: 5px solid red;
+    width: 100%;
+    height: 500px;
+}
+
+#contenido {
+    margin: 0;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
