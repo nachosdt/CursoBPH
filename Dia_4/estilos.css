@@ -1,0 +1,72 @@
+#abuelo {
+    position: relative;
+    padding: 50px;
+    background-color: pink;
+}
+
+#padre {
+    width: 100%;
+    height: 2000px;
+    background-color: #b6b2b2;
+    position: relative;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+
+.rojo {
+    background-color: rgb(255, 88, 88);
+}
+
+.azul {
+    background-color: rgb(88, 88, 255);
+}
+
+.amarillo {
+    background-color: rgb(255, 255, 88);
+}
+
+.rosa {
+    background-color: rgb(255, 88, 255);
+}
+
+.verde {
+    background-color: rgb(88, 255, 88);
+}
+
+#static {
+    position: static;
+}
+
+#relative {
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+
+#absolute {
+    position: absolute;
+    left: 200px;
+    top: 0%;
+}
+
+#fixed {
+    position: fixed;
+    left: 0px;
+    top: 400px;
+}
+
+#sticky {
+    position: sticky;
+    top: 100px;
+    left: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    #abuelo {
+        background-color: black;
+    }
+}
