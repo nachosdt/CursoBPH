@@ -23,7 +23,7 @@
 /* VARIABLES */
 
 :root {
-    --primary: #5865f2;
+    --primary: #5966f3;
     --font-color-dark: #23272a;
 }
 
@@ -86,7 +86,9 @@ nav {
 /* HEADER */
 
 header {
+    width: 100%;
     height: 550px;
+    overflow: hidden;
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
@@ -166,4 +168,37 @@ header {
     position: absolute;
     right: -160px;
     bottom: 0;
+}
+
+/* SECCIONES FLEX */
+
+.flex-section {
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.flex-section-img {
+    width: 40%;
+}
+
+.text {
+    width: 25%;
+    color: var(--font-color-dark);
+    margin-top: 40px;
+}
+
+.text > h3 {
+    font-size: 48px;
+    font-family: whitneyBold;
+    margin-bottom: 40px;
+}
+
+.text > p {
+    font-size: 20px;
+    font-family: whitneyLight;
 }
