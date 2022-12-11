@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
