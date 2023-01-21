@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tres en Raya</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="estilos.css" />
+        <script src="scripts/Tablero.js" defer></script>
+        <script src="scripts/funciones.js" defer></script>
+        <script src="scripts/logica.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Juego del Tres en Raya</h1>
+        </header>
+        <main>
+            <section id="info">
+                <article class="jugador-info">
+                    <h2>Jugador 1</h2>
+                    <div>
+                        <label for="j1-color">Color:</label>
+                        <input type="color" id="j1-color" />
+                    </div>
+                    <p class="jugador-puntos">Puntos: 0</p>
+                </article>
+                <article class="jugador-info">
+                    <h2>Jugador 2</h2>
+                    <div>
+                        <label for="j2-color">Color:</label>
+                        <input type="color" id="j2-color" />
+                    </div>
+                    <p class="jugador-puntos">Puntos: 0</p>
+                </article>
+            </section>
+            <section id="tablero">
+                <table>
+                    <colgroup>
+                        <col class="columna" />
+                        <col class="columna" />
+                    </colgroup>
+                    <tr class="fila">
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                        <td class="celda">
+                            <span class="material-icons-outlined hide"> </span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

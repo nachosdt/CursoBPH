@@ -1,0 +1,111 @@
+:root {
+    --header-height: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--header-height));
+}
+
+#info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.jugador-info > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#tablero {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+.fila {
+    width: 100%;
+    border-bottom: 2px solid black;
+    /* background-color: aqua; */
+}
+
+.fila:last-child {
+    border-bottom: none;
+}
+
+.columna {
+    border-right: 2px solid black;
+}
+
+.celda {
+    width: 33.33%;
+    height: 200px;
+    cursor: pointer;
+}
+
+span.material-icons-outlined {
+    display: block;
+    font-size: 100px;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* span.hide {
+    display: none;
+} */
