@@ -92,6 +92,10 @@ table {
     border-right: 2px solid black;
 }
 
+.columna:last-child {
+    border-right: none;
+}
+
 .celda {
     width: 33.33%;
     height: 200px;
@@ -105,7 +109,3 @@ span.material-icons-outlined {
     margin: 0 auto;
     text-align: center;
 }
-
-/* span.hide {
-    display: none;
-} */

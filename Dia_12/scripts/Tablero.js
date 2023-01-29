@@ -16,14 +16,16 @@ class Tablero {
 
     columna(indice) {
         if (indice < 3 && indice >= 0) {
-            return this.tablero.map((fila) => fila[indice]);
+            return this.tablero.map((fila) => {
+                return fila[indice];
+            });
         } else throw new Error("Indice fuera de rango");
     }
 
     diagonal(indice) {
-        if (indice === 0) {
+        if (indice === "primera") {
             return this.tablero.map((fila, i) => fila[i]);
-        } else if (indice === 1) {
+        } else if (indice === "segunda") {
             return this.tablero.map((fila, i) => fila[2 - i]);
         } else throw new Error("Indice fuera de rango");
     }
