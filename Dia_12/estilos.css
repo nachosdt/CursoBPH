@@ -47,6 +47,10 @@ main {
     gap: 96px;
 }
 
+.jugador-info {
+    position: relative;
+}
+
 .jugador-info > div {
     display: flex;
     flex-direction: row;
@@ -63,6 +67,15 @@ input[type="color"] {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+#finger {
+    position: absolute;
+    top: 0;
+    right: -150px;
+    color: black;
+    transform: scaleX(-1) rotate(90deg);
+    transition: top 0.5s ease-in-out;
 }
 
 #tablero {
@@ -108,4 +121,53 @@ span.material-icons-outlined {
     color: #000;
     margin: 0 auto;
     text-align: center;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#modal-contenido {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    position: relative;
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#modal-reiniciar {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }

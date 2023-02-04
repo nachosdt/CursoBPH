@@ -37,6 +37,36 @@ class Tablero {
             this.turno = TURNO.JUGADOR_1;
         }
     }
+
+    ganador() {
+        let ganador = null;
+        let filas = this.tablero;
+        let columnas = [0, 1, 2].map((i) => this.columna(i));
+        let diagonales = ["primera", "segunda"].map((i) => this.diagonal(i));
+
+        let lineas = [...filas, ...columnas, ...diagonales];
+
+        lineas.forEach((linea) => {
+            if (linea.every((celda) => celda === OPCIONES.CRUZ)) {
+                ganador = TURNO.JUGADOR_1;
+            } else if (linea.every((celda) => celda === OPCIONES.CIRCULO)) {
+                ganador = TURNO.JUGADOR_2;
+            }
+        });
+
+        return ganador;
+    }
+
+    reiniciar() {
+        let ganador = this.ganador();
+        this.tablero = [
+            new Array(3).fill(OPCIONES.VACIO),
+            new Array(3).fill(OPCIONES.VACIO),
+            new Array(3).fill(OPCIONES.VACIO),
+        ];
+        this.turno =
+            ganador === TURNO.JUGADOR_1 ? TURNO.JUGADOR_2 : TURNO.JUGADOR_1;
+    }
 }
 
 const OPCIONES = {

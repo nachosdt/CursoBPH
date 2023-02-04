@@ -32,7 +32,12 @@
                         <label for="j1-color">Color:</label>
                         <input type="color" id="j1-color" />
                     </div>
-                    <p class="jugador-puntos">Puntos: 0</p>
+                    <p class="jugador-puntos">
+                        Puntos: <span id="puntuacion-1">0</span>
+                    </p>
+                    <span id="finger" class="material-icons-outlined">
+                        pan_tool_alt
+                    </span>
                 </article>
                 <article class="jugador-info">
                     <h2>Jugador 2</h2>
@@ -40,7 +45,9 @@
                         <label for="j2-color">Color:</label>
                         <input type="color" id="j2-color" />
                     </div>
-                    <p class="jugador-puntos">Puntos: 0</p>
+                    <p class="jugador-puntos">
+                        Puntos: <span id="puntuacion-2">0</span>
+                    </p>
                 </article>
             </section>
             <section id="tablero">
@@ -51,40 +58,55 @@
                         <col class="columna" />
                     </colgroup>
                     <tr class="fila">
-                        <td class="celda">
+                        <td class="celda" data-posicion="0,0">
                             <span class="material-icons-outlined"> </span>
                         </td>
-                        <td class="celda">
+                        <td class="celda" data-posicion="0,1">
                             <span class="material-icons-outlined"> </span>
                         </td>
-                        <td class="celda">
-                            <span class="material-icons-outlined"> </span>
-                        </td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="celda">
-                            <span class="material-icons-outlined"> </span>
-                        </td>
-                        <td class="celda">
-                            <span class="material-icons-outlined"> </span>
-                        </td>
-                        <td class="celda">
+                        <td class="celda" data-posicion="0,2">
                             <span class="material-icons-outlined"> </span>
                         </td>
                     </tr>
                     <tr class="fila">
-                        <td class="celda">
+                        <td class="celda" data-posicion="1,0">
                             <span class="material-icons-outlined"> </span>
                         </td>
-                        <td class="celda">
+                        <td class="celda" data-posicion="1,1">
                             <span class="material-icons-outlined"> </span>
                         </td>
-                        <td class="celda">
+                        <td class="celda" data-posicion="1,2">
+                            <span class="material-icons-outlined"> </span>
+                        </td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="celda" data-posicion="2,0">
+                            <span class="material-icons-outlined"> </span>
+                        </td>
+                        <td class="celda" data-posicion="2,1">
+                            <span class="material-icons-outlined"> </span>
+                        </td>
+                        <td class="celda" data-posicion="2,2">
                             <span class="material-icons-outlined"> </span>
                         </td>
                     </tr>
                 </table>
             </section>
         </main>
+        <div id="modal">
+            <div id="modal-contenido">
+                <span
+                    id="cerrar"
+                    class="material-icons-outlined"
+                    onclick="cierraModal()"
+                    >close</span
+                >
+                <h2>¡Ganador!</h2>
+                <p id="modal-ganador"></p>
+                <button id="modal-reiniciar" onclick="cierraModal()">
+                    Reiniciar
+                </button>
+            </div>
+        </div>
     </body>
 </html>
